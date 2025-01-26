@@ -11,6 +11,13 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-logo">{SR}</div>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="switch-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
         <div class="nav-items">
             <a href="#home" class="active">Home</a>
             <a href="#projects">Projects</a>
@@ -138,5 +145,26 @@
     <footer>
         <p>© 2025 Sagar Rout- Java Backend Developer</p>
     </footer>
+
+    <script>
+        const themeSwitch = document.getElementById('theme-switch');
+        
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeSwitch.checked = true;
+        }
+
+        // Theme switch handler
+        themeSwitch.addEventListener('change', function() {
+            if (this.checked) {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
 </body>
 </html> 
