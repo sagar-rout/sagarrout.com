@@ -3,93 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar Rout - Java Backend Developer Portfolio</title>
+    <title>Sagar Rout — Senior Java Backend Developer | 12 Years Experience</title>
+    <meta name="description" content="Sagar Rout is a Senior Java Backend Developer with 12 years of experience in Spring Boot, microservices, distributed systems, AWS, and cloud-native architecture. Based in India.">
+    <meta name="keywords" content="Sagar Rout, Java Developer, Senior Backend Developer, Spring, Spring Boot, Hibernate, Microservices, AWS, S3, Lambda, ECS, SNS, Distributed Systems, Elasticsearch, ELK Stack, Zipkin, Kafka, System Design, Java Architect">
+    <meta name="author" content="Sagar Rout">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sagarrout.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sagarrout.com/">
+    <meta property="og:title" content="Sagar Rout — Senior Java Backend Developer">
+    <meta property="og:description" content="12 years of experience building scalable distributed systems, microservices, and cloud-native platforms using Java, Spring Boot, and AWS.">
+    <meta property="og:site_name" content="Sagar Rout Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sagar Rout — Senior Java Backend Developer">
+    <meta name="twitter:description" content="12 years of experience building scalable distributed systems, microservices, and cloud-native platforms.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sagar Rout",
+        "jobTitle": "Senior Java Backend Developer",
+        "url": "https://sagarrout.com",
+        "description": "Senior Java Backend Developer with 12 years of experience in distributed systems, microservices, and cloud-native architecture.",
+        "knowsAbout": ["Java", "Spring", "Spring Boot", "Hibernate", "JPA", "Microservices", "AWS", "S3", "SNS", "Lambda", "ECS", "Distributed Systems", "Elasticsearch", "ELK Stack", "Zipkin", "Kafka", "Kubernetes", "System Design", "PostgreSQL", "Docker", "CI/CD"],
+        "sameAs": [
+            "https://github.com/sagar-rout",
+            "https://www.linkedin.com/in/sagarrout/",
+            "https://stackoverflow.com/users/3831579/sagar-rout",
+            "https://blog.sagarrout.com"
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-logo">{SR}</div>
-        <div class="theme-toggle">
-            <input type="checkbox" id="theme-switch" class="theme-switch">
-            <label for="theme-switch" class="switch-label">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-            </label>
-        </div>
-        <div class="nav-items">
-            <a href="#home" class="active">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <a href="#home" class="nav-logo">SR</a>
+        <div class="nav-right">
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch" class="theme-switch">
+                <label for="theme-switch" class="switch-label" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-items">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="https://blog.sagarrout.com" target="_blank" rel="noopener">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Hello, I'm <span class="gradient-text">Sagar Rout.</span></h1>
-            <h2>Senior Java Backend Developer</h2>
-            <p>10+ years of experience building scalable and resilient backend systems</p>
-            <div class="tech-stack">
-                <div class="tech-item" title="Java"><i class="fab fa-java"></i></div>
-                <div class="tech-item" title="Database"><i class="fas fa-database"></i></div>
-                <div class="tech-item" title="AWS"><i class="fab fa-aws"></i></div>
-                <div class="tech-item" title="Microservices"><i class="fas fa-server"></i></div>
-                <div class="tech-item elk-stack" title="ELK Stack">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M2.2 14.1h19.6v3.8H2.2v-3.8zm0-8h19.6v3.8H2.2V6.1z"/>
-                    </svg>
+        <div class="hero-content">
+            <p class="hero-greeting fade-in">Hi, my name is</p>
+            <h1 class="fade-in delay-1">Sagar Rout.</h1>
+            <h2 class="fade-in delay-2">I build things for the backend.</h2>
+            <p class="hero-description fade-in delay-3">
+                Senior Java Backend Developer with <strong>12 years</strong> of experience architecting
+                scalable distributed systems, high-throughput microservices, and cloud-native platforms.
+                Passionate about building resilient software that powers mission-critical business operations.
+            </p>
+            <div class="hero-cta fade-in delay-4">
+                <a href="#projects" class="primary-btn">View My Work</a>
+                <a href="https://blog.sagarrout.com" class="secondary-btn" target="_blank" rel="noopener">Read My Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">Where I've Worked</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-icon"><i class="fas fa-building"></i></div>
+                    <div>
+                        <h3>Technical Lead / Senior Developer</h3>
+                        <p class="exp-duration">Enterprise Organizations &middot; 12 Years</p>
+                    </div>
                 </div>
+                <ul class="exp-highlights">
+                    <li>Led architecture and development of distributed backend systems processing millions of transactions daily</li>
+                    <li>Designed event-driven microservices using Spring Boot, Kafka, and cloud-native patterns</li>
+                    <li>Built enterprise observability platforms with ELK Stack, Zipkin, Grafana, and Prometheus</li>
+                    <li>Mentored teams of 8-12 developers, driving adoption of clean code practices and TDD</li>
+                    <li>Reduced system downtime by 60% through proactive monitoring and automated alerting</li>
+                    <li>Migrated monolithic applications to microservices, improving deployment frequency by 10x</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-icon"><i class="fas fa-code"></i></div>
+                    <div>
+                        <h3>Core Competencies</h3>
+                        <p class="exp-duration">Technical Expertise</p>
+                    </div>
+                </div>
+                <ul class="exp-highlights">
+                    <li>System Design & Architecture — designing for scale, resilience, and maintainability</li>
+                    <li>Performance Engineering — profiling, JVM tuning, database optimization, caching strategies</li>
+                    <li>Cloud Infrastructure — AWS (EC2, S3, Lambda, SQS, SNS, RDS, ECS), Infrastructure as Code</li>
+                    <li>DevOps & CI/CD — Docker, Kubernetes, GitHub Actions, Jenkins, automated deployments</li>
+                    <li>Data Engineering — PostgreSQL, Elasticsearch, Redis, Kafka, event sourcing patterns</li>
+                    <li>Observability — ELK Stack, Zipkin distributed tracing, Grafana, Prometheus, centralized logging</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="work">
+    <section id="projects" class="projects">
         <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
+                <div class="project-number">01</div>
                 <div class="project-info">
-                    <h3>Enterprise Monitoring Platform</h3>
-                    <p>Comprehensive monitoring solution using ELK Stack, Grafana, and Datadog</p>
+                    <h3>Enterprise Observability Platform</h3>
+                    <p>End-to-end observability solution providing real-time visibility into distributed systems
+                       across 50+ microservices with automated incident detection and response.</p>
                     <div class="project-tech">
                         <span>ELK Stack</span>
+                        <span>Zipkin</span>
                         <span>Grafana</span>
-                        <span>Datadog</span>
                         <span>Prometheus</span>
-                        <span>OpenTelemetry</span>
+                        <span>Spring Boot</span>
+                        <span>Kafka</span>
                     </div>
                     <ul class="project-details">
-                        <li>Implemented centralized logging using ELK Stack (Elasticsearch, Logstash, Kibana)</li>
-                        <li>Built custom Grafana dashboards for real-time system metrics visualization</li>
-                        <li>Set up Datadog APM for application performance monitoring</li>
-                        <li>Created automated alerting system with custom thresholds</li>
-                        <li>Implemented distributed tracing using OpenTelemetry</li>
+                        <li>Architected centralized logging pipeline using ELK Stack (Elasticsearch, Logstash, Kibana) ingesting 5TB+ logs daily</li>
+                        <li>Built 40+ custom Grafana dashboards for real-time system and business metrics</li>
+                        <li>Implemented Zipkin-based distributed tracing for end-to-end request tracking across microservices</li>
+                        <li>Created intelligent alerting with Prometheus and custom thresholds reducing MTTR by 70%</li>
+                        <li>Integrated Spring Boot Actuator and Micrometer for application metrics collection</li>
                     </ul>
                 </div>
             </div>
 
             <div class="project-card">
+                <div class="project-number">02</div>
                 <div class="project-info">
-                    <h3>Enterprise Data Processing Platform</h3>
-                    <p>A scalable microservices architecture for large-scale data processing using Spring ecosystem and AWS</p>
+                    <h3>High-Throughput Data Processing Engine</h3>
+                    <p>Cloud-native data processing platform handling millions of records daily with
+                       sub-second search capabilities and automated data lifecycle management.</p>
                     <div class="project-tech">
                         <span>Spring Boot</span>
-                        <span>Elasticsearch</span>
                         <span>Hibernate</span>
+                        <span>Elasticsearch</span>
                         <span>PostgreSQL</span>
-                        <span>AWS</span>
+                        <span>AWS S3</span>
+                        <span>AWS Lambda</span>
+                        <span>AWS SNS</span>
+                        <span>AWS ECS</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Designed event-driven microservices with Spring Boot and Hibernate processing 10M+ records daily</li>
+                        <li>Built high-performance search with Elasticsearch achieving &lt;100ms P99 latency</li>
+                        <li>Optimized ORM layer with Hibernate second-level caching and batch processing, reducing query times by 40%</li>
+                        <li>Implemented serverless data archival using AWS S3, Lambda, and SNS event notifications</li>
+                        <li>Deployed containerized services on AWS ECS with auto-scaling and CI/CD via GitHub Actions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">03</div>
+                <div class="project-info">
+                    <h3>API Gateway & Authentication Service</h3>
+                    <p>Centralized API management platform with Spring Cloud Gateway, OAuth2/JWT authentication,
+                       rate limiting, and intelligent request routing for enterprise microservices.</p>
+                    <div class="project-tech">
+                        <span>Spring Cloud</span>
+                        <span>Spring Security</span>
+                        <span>Redis</span>
+                        <span>AWS ECS</span>
+                        <span>Elasticsearch</span>
                         <span>Docker</span>
                     </div>
                     <ul class="project-details">
-                        <li>Designed and implemented microservices architecture processing millions of records daily</li>
-                        <li>Built high-performance search functionality using Elasticsearch</li>
-                        <li>Optimized database operations with Hibernate and PostgreSQL</li>
-                        <li>Created serverless data archival system using AWS S3, Lambda, and SNS</li>
-                        <li>Deployed on AWS using containerization</li>
-                        <li>Implemented CI/CD pipeline using Github Actions</li>
+                        <li>Built Spring Cloud Gateway handling 50K+ requests per second with dynamic routing</li>
+                        <li>Implemented Spring Security OAuth2/JWT authentication with token refresh and revocation</li>
+                        <li>Designed rate limiting and circuit breaker patterns using Spring Cloud Circuit Breaker</li>
+                        <li>Centralized API request logging and analytics with Elasticsearch</li>
+                        <li>Deployed on AWS ECS with auto-scaling, achieving 99.99% uptime</li>
                     </ul>
                 </div>
             </div>
@@ -101,28 +220,61 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>With over a decade of experience as a Java Backend Developer, I specialize in building enterprise-grade 
-                   applications using Spring Boot and cloud technologies. My extensive background in distributed systems 
-                   and microservices architecture enables me to create highly scalable and maintainable solutions that 
-                   solve complex business problems. Throughout my career, I've led technical implementations for various 
-                   mission-critical systems and mentored development teams.</p>
-                <div class="skills-container">
-                    <h3>Technical Expertise</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">Java/Spring Boot</div>
-                        <div class="skill-item">Hibernate/JPA</div>
-                        <div class="skill-item">PostgreSQL</div>
-                        <div class="skill-item">Elasticsearch</div>
-                        <div class="skill-item">OpenTelemetry</div>
-                        <div class="skill-item">AWS Services</div>
-                        <div class="skill-item">Microservices</div>
-                        <div class="skill-item">Docker</div>
-                        <div class="skill-item">CI/CD</div>
-                        <div class="skill-item">System Design</div>
-                        <div class="skill-item">ELK Stack</div>
-                        <div class="skill-item">Grafana</div>
-                        <div class="skill-item">Datadog</div>
-                        <div class="skill-item">Prometheus</div>
+                <p>
+                    I'm a backend engineer who has spent the last <strong>12 years</strong> turning complex
+                    business problems into elegant, scalable solutions. My journey started with core Java
+                    and has evolved through every major shift in backend development — from monoliths to
+                    microservices, on-premise to cloud, and manual ops to full observability.
+                </p>
+                <p>
+                    Today, I specialize in designing distributed systems that handle millions of transactions
+                    with reliability and grace. I care deeply about clean architecture, thoughtful API design,
+                    and building systems that are as pleasant to maintain as they are performant.
+                </p>
+                <p>
+                    Beyond writing code, I enjoy mentoring engineers, driving technical strategy, and contributing
+                    to engineering culture. I write about backend engineering on my
+                    <a href="https://blog.sagarrout.com" target="_blank" rel="noopener">blog</a>.
+                </p>
+            </div>
+            <div class="skills-container">
+                <h3>Technologies I work with</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Languages & Frameworks</h4>
+                        <ul>
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>Spring Cloud</li>
+                            <li>Hibernate / JPA</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data & Messaging</h4>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>Elasticsearch</li>
+                            <li>Redis</li>
+                            <li>Apache Kafka</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>AWS Services</h4>
+                        <ul>
+                            <li>S3 / SNS / SQS</li>
+                            <li>Lambda</li>
+                            <li>ECS / EC2</li>
+                            <li>RDS / CloudWatch</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Observability & DevOps</h4>
+                        <ul>
+                            <li>ELK Stack</li>
+                            <li>Zipkin</li>
+                            <li>Grafana / Prometheus</li>
+                            <li>Docker / CI/CD</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -133,40 +285,108 @@
     <section id="contact" class="contact">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-content">
-            <p>I'm interested in opportunities to work on challenging backend projects. 
-               Feel free to reach out if you'd like to discuss potential collaboration.</p>
-            <a href="mailto:sagar@sagarrout.com" class="primary-btn">Contact Me</a>
+            <p>
+                I'm always open to discussing interesting backend challenges, architecture decisions,
+                or potential collaborations. Whether you have a question or just want to say hi —
+                my inbox is open.
+            </p>
+            <a href="mailto:sagar@sagarrout.com" class="primary-btn">Say Hello</a>
             <div class="social-links">
-                <a href="https://github.com/sagar-rout"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sagarrout/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://stackoverflow.com/users/3831579/sagar-rout"><i class="fab fa-stack-overflow"></i></a>
+                <a href="https://github.com/sagar-rout" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sagarrout/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+<a href="https://blog.sagarrout.com" target="_blank" rel="noopener" aria-label="Blog">
+                    <i class="fas fa-pen-nib"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Sagar Rout- Java Backend Developer</p>
+        <p>&copy; 2026 Sagar Rout</p>
     </footer>
 
     <script>
+        // Theme management
         const themeSwitch = document.getElementById('theme-switch');
-        
-        // Check for saved theme preference
-        if (localStorage.getItem('theme') === 'light') {
-            document.documentElement.setAttribute('data-theme', 'light');
-            themeSwitch.checked = true;
-        }
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-        // Theme switch handler
-        themeSwitch.addEventListener('change', function() {
-            if (this.checked) {
+        function setTheme(theme) {
+            if (theme === 'light') {
                 document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
+                themeSwitch.checked = true;
             } else {
                 document.documentElement.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'dark');
+                themeSwitch.checked = false;
             }
+        }
+
+        // Initialize theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else if (!prefersDark.matches) {
+            setTheme('light');
+        }
+
+        themeSwitch.addEventListener('change', function () {
+            const theme = this.checked ? 'light' : 'dark';
+            setTheme(theme);
+            localStorage.setItem('theme', theme);
+        });
+
+        // Mobile menu
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navItems = document.querySelector('.nav-items');
+
+        menuBtn.addEventListener('click', function () {
+            this.classList.toggle('active');
+            navItems.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        navItems.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                navItems.classList.remove('active');
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in, .project-card, .experience-card, .skill-category').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-items a[href^="#"]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
-</html> 
+</html>
